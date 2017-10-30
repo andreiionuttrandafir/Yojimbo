@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+    <style>
+        body{
+            background:black;
+            margin: 0 0 0 0;
+        }
+        
+      /*  #sun {
+            position:absolute;
+            width:200vw;
+            margin-top:70vh;
+            margin-left:40vw;
+            overflow:hidden;
+            animation: RisingSun 1s linear forwards;
+        }
+        
+        @keyframes RisingSun{
+            0%{transform:scale(0.00001)};
+            100%{width:200vw;};
+        }
+        
+        #grass {
+            position:relative;
+            margin-top:70vh;
+            margin-left:0vw;
+            width:100vw;
+            display:linear;
+            overflow:hidden;
+        } */
+        
+        #walk{
+            position:relative;
+            margin-top: 20vh;
+            margin-left:10vw;
+            float:left;
+            width:40vw;
+            display:linear;  /* TO MAKE THIS LINEAR WHEN CLICKED ON START BUTTON */
+            animation:walk 2s linear forwards;
+        }
+        
+        @keyframes walk{
+            0%{opacity:0}
+            100%{opacity:1; transform:translateY(-10vh)}
+        }
+        
+        #walk2 {
+            position:relative;
+            margin-top: 0vh;
+            margin-left:0vw;
+            float:left;
+            width:40vw;
+            display:none;
+            animation:walk2 2s linear forwards;
+        }
+        
+        @keyframes walk2{
+            0%{opacity:0}
+            100%{opacity:1; transform:translateY(10vh)}
+        }
+        
+        #thugs {
+            position:relative;
+            margin-top: 10vh;
+            margin-left:0vw;
+            float:left;
+            width:80vw;
+            display:none;
+            animation:thugs 2s linear forwards;
+        }
+        
+        @keyframes thugs{
+            0%{opacity:0; transform: translateX(0vw)}
+            100%{opacity:1;transform: translateX(10vw)}
+        }
+        
+        #yojimbo_thugs{
+            position:relative;
+            margin-top: 10vh;
+            margin-left:20vw;
+            float:left;
+            width:80vw;
+            display:none;
+            animation:yojimbo_thugs 2s linear forwards;
+        }
+        
+        @keyframes yojimbo_thugs{
+            0%{opacity:0}
+            100%{opacity:1; transform: translateX(-10vw)}
+        }
+        
+        #close_up{
+            position:relative;
+            margin-top: 15vh;
+            margin-left:10vw;
+            float:left;
+            width:80vw;
+            display:none;
+            animation:close_up 2s linear forwards;
+            z-index: -9;
+        }
+        
+        @keyframes close_up{
+            0%{opacity:0}
+            100%{opacity:1;transform:translateY(-5vh)}
+        }
+        
+        #shinderu{
+            position:absolute;
+            margin-top: 30vh;
+            margin-left:60vw;
+            float:left;
+            width:40vw;
+            display:none;
+            animation:shinderu 2s linear forwards;
+        }
+        
+        @keyframes shinderu {
+            0% {transform: translateY (0vh); opacity:0}
+            100%{transform:translateY(-5vh);opacity:1}
+        }
+        
+        
+        
+    </style>
+    </head>
+    
+    
+    <body>
+      
+        <img src="images/1_walking_in_town.jpg" id="walk">
+        <img src="images/2_yojimbo_in_town.jpg" id="walk2">
+        <img src="images/3_thugs.jpg" id="thugs">
+        <img src="images/4_yojimbo_thugs.jpg" id="yojimbo_thugs">
+        <img src="images/5_close_up.jpg" id="close_up">
+        <img src="images/shinderu.png" id="shinderu">
+        <audio src="sound/theme.mp3" id="theme_soundtrack"> </audio>
+        
+         <script>  
+             
+             let Walk=document.querySelector("#walk");
+             let Walk2=document.querySelector("#walk2");
+             let Thugs=document.querySelector("#thugs");
+             let YojimboThugs=document.querySelector("#yojimbo_thugs");
+             let CloseUp=document.querySelector("#close_up");
+             let Shinderu=document.querySelector("#shinderu");
+             let Theme=document.querySelector("#theme_soundtrack");
+             
+             Walk.addEventListener("click", image2)
+             function image2(){
+                 Theme.play();
+                 Walk.style.display = "flex";
+                 if(Walk.style.display = "flex"){
+                    Walk2.style.display="flex";
+                }}
+             
+             Walk2.addEventListener("click", image3)
+             function image3(){
+                 "animationstart";
+                 Walk2.style.display = "none";
+                 Walk.style.display = "none";
+                 if(Walk2.style.display = "none"){
+                    Thugs.style.display="flex";
+                }}
+             
+              Thugs.addEventListener("click", image4)
+             function image4(){
+                 "animationstart";
+                 Thugs.style.display = "none";
+                 if(Thugs.style.display = "none"){
+                    YojimboThugs.style.display="flex";
+                }}
+             
+               YojimboThugs.addEventListener("click", image5)
+             function image5(){
+                 "animationstart";
+               
+                 YojimboThugs.style.display = "none";
+                 if(YojimboThugs.style.display = "none"){
+                    CloseUp.style.display="flex";
+                     Shinderu.style.display="flex";
+                     }
+                }
+         </script>
+    </body>
+</html>
