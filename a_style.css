@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Chelsea+Market|Shojumaru');
+body{
+    width: 1366px;
+    height: 768px;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: gainsboro;
+    position: relative;
+}
+
+button{
+    font-family: 'Chelsea Market', cursive;
+    width:180px;
+    height: 50px;
+    position: absolute;
+    font-size: 1.5em;
+    background-color: red;
+    top: 41%;
+    left: 10%;
+}
+h1{
+    font-family: 'Shojumaru', cursive;
+    margin: 0px;
+    font-size: 12em;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+p{
+    margin: 0px;
+    height: 50px;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 3em;
+    position: absolute;
+    top: 56%;
+    left: 30%;
+}
