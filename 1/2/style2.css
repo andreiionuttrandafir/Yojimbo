@@ -12,35 +12,44 @@ main {
     background-image: url(scn2_background.png);
     background-repeat: no-repeat;
     background-size: auto;
-     animation-name: fade_in_all;
+    animation-name: fade_in_all;
     animation-duration: 1.9s;
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    
+
 }
 
 @keyframes fade_in_all {
-     from {opacity: 0;}
-    to {opacity: 1}
+    from {
+        opacity: 0;
     }
-.div_contenedor{
+    to {
+        opacity: 1
+    }
+}
+
+.div_contenedor {
     opacity: 0;
     animation-name: fade_in2;
     animation-duration: 3s;
     animation-delay: 2s;
     animation-iteration-count: 1;
-    animation-fill-mode: forwards;   
+    animation-fill-mode: forwards;
 }
 
 @keyframes fade_in2 {
-    from {opacity: 0;}
-    to {opacity: 1}
-    
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
 }
-.boton_next{
+
+.boton_next {
     font-family: 'Chelsea Market', cursive;
-    width:180px;
+    width: 180px;
     height: 50px;
     border-radius: 102px;
     position: absolute;
@@ -49,6 +58,7 @@ main {
     top: 390px;
     left: 580px;
 }
+
 div h1 {
     margin: 0;
     font-family: 'Chelsea Market', cursive;
@@ -66,7 +76,7 @@ div img {
     animation-delay: 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    
+
 }
 
 @keyframes fade_in {
@@ -80,4 +90,3 @@ div img {
         left: 340px;
         top: 320px;
     }
-
