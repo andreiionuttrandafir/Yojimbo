@@ -11,6 +11,7 @@ main{
     background-image:url(assets/img/1.gif);
     background-repeat: no-repeat;
     background-size: contain;
+    background-blend-mode: soft-light;
 }
 
 main form input{
