@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Chelsea+Market|Shojumaru');
 body{
-    width: 1366px;
+    width: 1024px;
     height: 768px;
 }
 main{
@@ -10,10 +10,10 @@ main{
     position: relative;
     background-image:url(assets/img/1.png);
     background-repeat: no-repeat;
-    background-size: ;
+    background-size: contain;
 }
 
-button{
+main form input{
     font-family: 'Chelsea Market', cursive;
     width:180px;
     height: 50px;
