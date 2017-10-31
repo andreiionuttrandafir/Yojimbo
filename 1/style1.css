@@ -12,6 +12,18 @@ main {
     background-image: url(scn1_background.png);
     background-repeat: no-repeat;
     background-size: auto;
+    animation-name: fade_in_all;
+    animation-duration: 1.9s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes fade_in_all {
+     from {opacity: 0;}
+    to {opacity: 1}
+    }
 }
 .div_contenedor{
     opacity: 0;
